@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.tempanimaladoption.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_petDescriptionFragment"
+            app:destination="@id/petDescriptionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_request"
+        android:name="com.example.tempanimaladoption.ui.request.requests"
+        android:label="Requests"
+        tools:layout="@layout/requests_fragment" >
+        <action
+            android:id="@+id/action_nav_request_to_request_description"
+            app:destination="@id/request_description" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_adopted"
+        android:name="com.example.tempanimaladoption.ui.adopt.adopted"
+        android:label="Adopted"
+        tools:layout="@layout/adopted_fragment" >
+        <action
+            android:id="@+id/action_nav_adopted_to_nav_adopted_description"
+            app:destination="@id/nav_adopted_description" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_newanimal"
+        android:name="com.example.tempanimaladoption.ui.addanimal.add_animal"
+        android:label="Add animal"
+        tools:layout="@layout/add_animal_fragment" />
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.tempanimaladoption.ui.about.Aboutus"
+        android:label="About us"
+        tools:layout="@layout/aboutus_fragment" />
+    <fragment
+        android:id="@+id/petDescriptionFragment"
+        android:name="com.example.tempanimaladoption.ui.home.PetDescriptionFragment"
+        android:label="Pet description"
+        tools:layout="@layout/pet_description_fragment" />
+
+    <fragment
+        android:id="@+id/nav_adopted_description"
+        android:name="com.example.tempanimaladoption.ui.adopt.petdesc"
+        android:label="request_description_fragment"
+        tools:layout="@layout/petdesc_fragment" />
+    <fragment
+        android:id="@+id/request_description"
+        android:name="com.example.tempanimaladoption.ui.request.request_description"
+        android:label="request_description_fragment"
+        tools:layout="@layout/request_description_fragment" />
+</navigation>

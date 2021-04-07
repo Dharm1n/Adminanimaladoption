@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_wysiwyg_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_request"
+            android:icon="@drawable/ic_baseline_drafts_24"
+            android:title="Requests" />
+
+        <item
+            android:id="@+id/nav_adopted"
+            android:icon="@drawable/ic_baseline_event_available_24"
+            android:title="Adopted" />
+
+        <item
+            android:id="@+id/nav_newanimal"
+            android:icon="@drawable/ic_addanimal"
+            android:title="Add animal" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_aboutus"
+            android:title="About us" />
+    </group>
+</menu>
